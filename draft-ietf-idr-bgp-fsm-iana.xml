@@ -19,6 +19,7 @@
   updates=""
   submissionType="IETF"
   xml:lang="en"
+  consensus="true"
   version="3">
 
   <front>
@@ -280,6 +281,16 @@
                 <td>TrackTcpState</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
+              <tr>
+                <td>14</td>
+                <td>SendHoldTimer</td>
+                <td><xref target="I-D.ietf-idr-bgp-sendholdtimer" section="3.1"/></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>SendHoldTime</td>
+                <td><xref target="I-D.ietf-idr-bgp-sendholdtimer" section="3.1"/></td>
+              </tr>
             </tbody>
           </table>
         </section>
@@ -506,6 +517,14 @@
                 <td>BGP Message</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
+
+              <tr>
+                <td>29</td>
+                <td>SendHoldTimer_Expires</td>
+                <td>Timer</td>
+                <td><xref target="I-D.ietf-idr-bgp-sendholdtimer" section="3.2"/></td>
+              </tr>
+
             </tbody>
           </table>
         </section>
@@ -529,6 +548,7 @@
         <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
         <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8174.xml"/>
         <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.4271.xml"/>
+        <xi:include href="https://datatracker.ietf.org/doc/bibxml3/draft-ietf-idr-bgp-sendholdtimer.xml"/>
         <!-- The recommended and simplest way to include a well known reference -->
         
       </references>

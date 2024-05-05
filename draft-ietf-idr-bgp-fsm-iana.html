@@ -17,27 +17,27 @@
          this draft requests IANA to create and maintain registries for elements
          in the BGP FSM. 
     " name="description">
-<meta content="xml2rfc 3.19.1" name="generator">
+<meta content="xml2rfc 3.18.2" name="generator">
 <meta content="BGP" name="keyword">
 <meta content="Border Gateway Protocol" name="keyword">
 <meta content="FSM" name="keyword">
 <meta content="Finite State Machine" name="keyword">
 <meta content="draft-ietf-idr-bgp-fsm-iana-00" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.19.1
-    Python 3.11.7
-    ConfigArgParse 1.7
+  xml2rfc 3.18.2
+    Python 3.10.14
+    ConfigArgParse 1.5.3
     google-i18n-address 3.1.0
     intervaltree 3.1.0
-    Jinja2 3.1.2
-    lxml 4.9.3
-    platformdirs 3.10.0
+    Jinja2 3.1.3
+    lxml 4.9.4
+    platformdirs 4.2.0
     pycountry 23.12.11
     PyYAML 6.0.1
     requests 2.31.0
     setuptools 68.0.0
     six 1.16.0
-    wcwidth 0.2.5
+    wcwidth 0.2.13
 -->
 <link href="draft-ietf-idr-bgp-fsm-iana.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -263,7 +263,8 @@ a[href]:hover {
   background-color: #f2f2f2;
 }
 figcaption a[href],
-a[href].selfRef {
+a[href].selfRef,
+.iref + a[href].internal {
   color: #222;
 }
 /* XXX probably not this:
@@ -1219,7 +1220,7 @@ li > p:last-of-type:only-child {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Haas</td>
-<td class="center">Expires 4 November 2024</td>
+<td class="center">Expires 6 November 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1232,12 +1233,12 @@ li > p:last-of-type:only-child {
 <dd class="internet-draft">draft-ietf-idr-bgp-fsm-iana-00</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-05-03" class="published">3 May 2024</time>
+<time datetime="2024-05-05" class="published">5 May 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-11-04">4 November 2024</time></dd>
+<dd class="expires"><time datetime="2024-11-06">6 November 2024</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1280,7 +1281,7 @@ li > p:last-of-type:only-child {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 4 November 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 6 November 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1626,6 +1627,20 @@ li > p:last-of-type:only-child {
                   <span><a href="https://rfc-editor.org/rfc/rfc4271#section-8" class="relref">Section 8</a> of [<a href="#RFC4271" class="cite xref">RFC4271</a>]</span>
 </td>
               </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">14</td>
+                <td class="text-left" rowspan="1" colspan="1">SendHoldTimer</td>
+                <td class="text-left" rowspan="1" colspan="1">
+                  <span><a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-sendholdtimer-06#section-3.1" class="relref">Section 3.1</a> of [<a href="#I-D.ietf-idr-bgp-sendholdtimer" class="cite xref">I-D.ietf-idr-bgp-sendholdtimer</a>]</span>
+</td>
+              </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">15</td>
+                <td class="text-left" rowspan="1" colspan="1">SendHoldTime</td>
+                <td class="text-left" rowspan="1" colspan="1">
+                  <span><a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-sendholdtimer-06#section-3.1" class="relref">Section 3.1</a> of [<a href="#I-D.ietf-idr-bgp-sendholdtimer" class="cite xref">I-D.ietf-idr-bgp-sendholdtimer</a>]</span>
+</td>
+              </tr>
             </tbody>
           </table>
 </section>
@@ -1885,6 +1900,14 @@ li > p:last-of-type:only-child {
                   <span><a href="https://rfc-editor.org/rfc/rfc4271#section-8" class="relref">Section 8</a> of [<a href="#RFC4271" class="cite xref">RFC4271</a>]</span>
 </td>
               </tr>
+              <tr>
+                <td class="text-left" rowspan="1" colspan="1">29</td>
+                <td class="text-left" rowspan="1" colspan="1">SendHoldTimer_Expires</td>
+                <td class="text-left" rowspan="1" colspan="1">Timer</td>
+                <td class="text-left" rowspan="1" colspan="1">
+                  <span><a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-sendholdtimer-06#section-3.2" class="relref">Section 3.2</a> of [<a href="#I-D.ietf-idr-bgp-sendholdtimer" class="cite xref">I-D.ietf-idr-bgp-sendholdtimer</a>]</span>
+</td>
+              </tr>
             </tbody>
           </table>
 </section>
@@ -1920,6 +1943,10 @@ li > p:last-of-type:only-child {
 <dt id="RFC4271">[RFC4271]</dt>
         <dd>
 <span class="refAuthor">Rekhter, Y., Ed.</span>, <span class="refAuthor">Li, T., Ed.</span>, and <span class="refAuthor">S. Hares, Ed.</span>, <span class="refTitle">"A Border Gateway Protocol 4 (BGP-4)"</span>, <span class="seriesInfo">RFC 4271</span>, <span class="seriesInfo">DOI 10.17487/RFC4271</span>, <time datetime="2006-01" class="refDate">January 2006</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc4271">https://www.rfc-editor.org/info/rfc4271</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="I-D.ietf-idr-bgp-sendholdtimer">[I-D.ietf-idr-bgp-sendholdtimer]</dt>
+        <dd>
+<span class="refAuthor">Snijders, J.</span>, <span class="refAuthor">Cartwright-Cox, B.</span>, and <span class="refAuthor">Y. Qu</span>, <span class="refTitle">"Border Gateway Protocol 4 (BGP-4) Send Hold Timer"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-idr-bgp-sendholdtimer-06</span>, <time datetime="2024-05-02" class="refDate">2 May 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-sendholdtimer-06">https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-sendholdtimer-06</a>&gt;</span>. </dd>
 <dd class="break"></dd></dl>
 </section>
 </section>

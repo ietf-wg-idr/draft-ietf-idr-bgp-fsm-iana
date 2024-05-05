@@ -4,8 +4,8 @@
 
 IDR                                                         J. Haas, Ed.
 Internet-Draft                                          Juniper Networks
-Intended status: Standards Track                              3 May 2024
-Expires: 4 November 2024
+Intended status: Standards Track                              5 May 2024
+Expires: 6 November 2024
 
 
        IANA Registrations for the BGP Finite State Machine (FSM)
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 November 2024.
+   This Internet-Draft will expire on 6 November 2024.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Haas                     Expires 4 November 2024                [Page 1]
+Haas                     Expires 6 November 2024                [Page 1]
 
 Internet-Draft          IANA Registry for BGP FSM               May 2024
 
@@ -74,12 +74,12 @@ Table of Contents
        2.2.2.  BGP-4 FSM Optional Session Attributes . . . . . . . .   4
      2.3.  BGP-4 FSM Events Sub-Registry . . . . . . . . . . . . . .   5
        2.3.1.  BGP-4 FSM Administrative Events . . . . . . . . . . .   5
-   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   7
+   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   6
    4.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   7
      4.1.  Normative References  . . . . . . . . . . . . . . . . . .   7
    Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .   7
-   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .   8
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   8
+   Contributors  . . . . . . . . . . . . . . . . . . . . . . . . . .   7
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   7
 
 1.  Introduction
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Haas                     Expires 4 November 2024                [Page 2]
+Haas                     Expires 6 November 2024                [Page 2]
 
 Internet-Draft          IANA Registry for BGP FSM               May 2024
 
@@ -165,7 +165,7 @@ Internet-Draft          IANA Registry for BGP FSM               May 2024
 
 
 
-Haas                     Expires 4 November 2024                [Page 3]
+Haas                     Expires 6 November 2024                [Page 3]
 
 Internet-Draft          IANA Registry for BGP FSM               May 2024
 
@@ -186,58 +186,51 @@ Internet-Draft          IANA Registry for BGP FSM               May 2024
 
 2.2.2.  BGP-4 FSM Optional Session Attributes
 
-   +=======+====================================+==============+
-   | Value | Name                               | Reference    |
-   +=======+====================================+==============+
-   | 1     | AcceptConnectionsUnconfiguredPeers | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 2     | AllowAutomaticStart                | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 3     | AllowAutomaticStop                 | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 4     | CollisionDetectEstablishedState    | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 5     | DampPeerOscillations               | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 6     | DelayOpen                          | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 7     | DelayOpenTime                      | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 8     | DelayOpenTimer                     | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 9     | IdleHoldTime                       | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 10    | IdleHoldTimer                      | Section 8 of |
-   |       |                                    | [RFC4271]    |
+   +=====+==================================+================================+
+   |Value|Name                              |Reference                       |
+   +=====+==================================+================================+
+   |1    |AcceptConnectionsUnconfiguredPeers|Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |2    |AllowAutomaticStart               |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |3    |AllowAutomaticStop                |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |4    |CollisionDetectEstablishedState   |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |5    |DampPeerOscillations              |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |6    |DelayOpen                         |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |7    |DelayOpenTime                     |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |8    |DelayOpenTimer                    |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |9    |IdleHoldTime                      |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |10   |IdleHoldTimer                     |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |11   |PassiveTcpEstablishment           |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |12   |SendNOTIFICATIONwithoutOPEN       |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |13   |TrackTcpState                     |Section 8 of [RFC4271]          |
+   +-----+----------------------------------+--------------------------------+
+   |14   |SendHoldTimer                     |Section 3.1 of                  |
+   |     |                                  |[I-D.ietf-idr-bgp-sendholdtimer]|
+   +-----+----------------------------------+--------------------------------+
 
 
 
-Haas                     Expires 4 November 2024                [Page 4]
+Haas                     Expires 6 November 2024                [Page 4]
 
 Internet-Draft          IANA Registry for BGP FSM               May 2024
 
 
-   +-------+------------------------------------+--------------+
-   | 11    | PassiveTcpEstablishment            | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 12    | SendNOTIFICATIONwithoutOPEN        | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
-   | 13    | TrackTcpState                      | Section 8 of |
-   |       |                                    | [RFC4271]    |
-   +-------+------------------------------------+--------------+
+   |15   |SendHoldTime                      |Section 3.1 of                  |
+   |     |                                  |[I-D.ietf-idr-bgp-sendholdtimer]|
+   +-----+----------------------------------+--------------------------------+
 
-                              Table 2
+                                  Table 2
 
 2.3.  BGP-4 FSM Events Sub-Registry
 
@@ -251,117 +244,99 @@ Internet-Draft          IANA Registry for BGP FSM               May 2024
 
 2.3.1.  BGP-4 FSM Administrative Events
 
-   +=======+==========================+================+==============+
-   | Value | Name                     | Event Type     | Reference    |
-   +=======+==========================+================+==============+
-   | 1     | ManualStart              | Administrative | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 2     | ManualStop               | Administrative | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 3     | AutomaticStart           | Administrative | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 4     | ManualStart with         | Administrative | Section 8 of |
-   |       | PassiveTcpEstablishment  |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 5     | AutomaticStart with      | Administrative | Section 8 of |
-   |       | PassiveTcpEstablishment  |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 6     | AutomaticStart with      | Administrative | Section 8 of |
-   |       | DampPeerOscillations     |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 7     | AutomaticStart with      | Administrative | Section 8 of |
-   |       | DampPeerOscillations and |                | [RFC4271]    |
+   +=====+=======================+==============+================================+
+   |Value|Name                   |Event Type    |Reference                       |
+   +=====+=======================+==============+================================+
+   |1    |ManualStart            |Administrative|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |2    |ManualStop             |Administrative|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |3    |AutomaticStart         |Administrative|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |4    |ManualStart with       |Administrative|Section 8 of [RFC4271]          |
+   |     |PassiveTcpEstablishment|              |                                |
+   +-----+-----------------------+--------------+--------------------------------+
+   |5    |AutomaticStart with    |Administrative|Section 8 of [RFC4271]          |
+   |     |PassiveTcpEstablishment|              |                                |
+   +-----+-----------------------+--------------+--------------------------------+
+   |6    |AutomaticStart with    |Administrative|Section 8 of [RFC4271]          |
+   |     |DampPeerOscillations   |              |                                |
+   +-----+-----------------------+--------------+--------------------------------+
+   |7    |AutomaticStart with    |Administrative|Section 8 of [RFC4271]          |
+   |     |DampPeerOscillations   |              |                                |
+   |     |and                    |              |                                |
+   |     |PassiveTcpEstablishment|              |                                |
+   +-----+-----------------------+--------------+--------------------------------+
+   |8    |AutomaticStop          |Administrative|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |9    |ConnectRetryTimer      |Timer         |Section 8 of [RFC4271]          |
+   |     |Expires                |              |                                |
+   +-----+-----------------------+--------------+--------------------------------+
+   |10   |HoldTimer Expires      |Timer         |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
 
 
 
-Haas                     Expires 4 November 2024                [Page 5]
+Haas                     Expires 6 November 2024                [Page 5]
 
 Internet-Draft          IANA Registry for BGP FSM               May 2024
 
 
-   |       | PassiveTcpEstablishment  |                |              |
-   +-------+--------------------------+----------------+--------------+
-   | 8     | AutomaticStop            | Administrative | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 9     | ConnectRetryTimer        | Timer          | Section 8 of |
-   |       | Expires                  |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 10    | HoldTimer Expires        | Timer          | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 11    | KeepaliveTimer Expires   | Timer          | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 12    | DelayOpenTimer Expires   | Timer          | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 13    | IdleHoldTimer Expires    | Timer          | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 14    | TcpConnection Valid      | TCP Connection | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 15    | Tcp CR Invalid           | TCP Connection | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 16    | Tcp CR Acked             | TCP Connection | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 17    | TcpConnectionConfirmed   | TCP Connection | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 18    | TcpConnectionFails       | TCP Connection | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 19    | BGPOpen                  | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 20    | BGPOpen with             | BGP Message    | Section 8 of |
-   |       | DelayOpenTimer running   |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 21    | BGPHeaderErr             | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 22    | BGPOpenMsgErr            | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 23    | OpenCollisionDump        | BGP Message    | Section 8 of |
+   |11   |KeepaliveTimer Expires |Timer         |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |12   |DelayOpenTimer Expires |Timer         |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |13   |IdleHoldTimer Expires  |Timer         |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |14   |TcpConnection Valid    |TCP Connection|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |15   |Tcp CR Invalid         |TCP Connection|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |16   |Tcp CR Acked           |TCP Connection|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |17   |TcpConnectionConfirmed |TCP Connection|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |18   |TcpConnectionFails     |TCP Connection|Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |19   |BGPOpen                |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |20   |BGPOpen with           |BGP Message   |Section 8 of [RFC4271]          |
+   |     |DelayOpenTimer running |              |                                |
+   +-----+-----------------------+--------------+--------------------------------+
+   |21   |BGPHeaderErr           |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |22   |BGPOpenMsgErr          |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |23   |OpenCollisionDump      |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |24   |NotifMsgVerErr         |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |25   |NotifMsg               |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |26   |KeepAliveMsg           |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |27   |UpdateMsg              |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |28   |UpdateMsgErr           |BGP Message   |Section 8 of [RFC4271]          |
+   +-----+-----------------------+--------------+--------------------------------+
+   |29   |SendHoldTimer_Expires  |Timer         |Section 3.2 of                  |
+   |     |                       |              |[I-D.ietf-idr-bgp-sendholdtimer]|
+   +-----+-----------------------+--------------+--------------------------------+
 
-
-
-Haas                     Expires 4 November 2024                [Page 6]
-
-Internet-Draft          IANA Registry for BGP FSM               May 2024
-
-
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 24    | NotifMsgVerErr           | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 25    | NotifMsg                 | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 26    | KeepAliveMsg             | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 27    | UpdateMsg                | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-   | 28    | UpdateMsgErr             | BGP Message    | Section 8 of |
-   |       |                          |                | [RFC4271]    |
-   +-------+--------------------------+----------------+--------------+
-
-                                 Table 3
+                                  Table 3
 
 3.  Security Considerations
 
    This document does not introduce any new security considerations to
    the BGP protocol.
+
+
+
+
+Haas                     Expires 6 November 2024                [Page 6]
+
+Internet-Draft          IANA Registry for BGP FSM               May 2024
+
 
 4.  References
 
@@ -381,18 +356,17 @@ Internet-Draft          IANA Registry for BGP FSM               May 2024
               DOI 10.17487/RFC4271, January 2006,
               <https://www.rfc-editor.org/info/rfc4271>.
 
+   [I-D.ietf-idr-bgp-sendholdtimer]
+              Snijders, J., Cartwright-Cox, B., and Y. Qu, "Border
+              Gateway Protocol 4 (BGP-4) Send Hold Timer", Work in
+              Progress, Internet-Draft, draft-ietf-idr-bgp-
+              sendholdtimer-06, 2 May 2024,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-
+              sendholdtimer-06>.
+
 Acknowledgements
 
    TBD
-
-
-
-
-
-Haas                     Expires 4 November 2024                [Page 7]
-
-Internet-Draft          IANA Registry for BGP FSM               May 2024
-
 
 Contributors
 
@@ -415,34 +389,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Haas                     Expires 4 November 2024                [Page 8]
+Haas                     Expires 6 November 2024                [Page 7]
