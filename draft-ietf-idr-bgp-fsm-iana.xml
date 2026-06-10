@@ -141,7 +141,7 @@
       <name>IANA Considerations</name>
 
       <section>
-        <name>BGP-4 FSM Elements Registry</name>
+        <name>Border Gateway Protocol (BGP-4) FSM Elements Registry</name>
 
         <t>IANA is requested to create a new registry, titled, "BGP-4 Finite State
            Machine (FSM) Elements". This is a new registry grouping distinct from the
@@ -150,15 +150,15 @@
 	   sub-registries shall be "IETF Review with Designated Experts".  The 
 	   designated experts for these registries are the IDR WG chairs.</t>
 
-        <t>The "BGP-4 Finite State Machine (FSM) Elements" registry will contain
-           the following sub-registries:</t>
+        <t>The "Border Gateway Protocol (BGP-4) Finite State Machine (FSM) Elements"
+           registry will contain the following sub-registries:</t>
       </section>
 
       <section>
-        <name>BGP-4 FSM Session Attribute Sub-Registries</name>
+        <name>Border Gateway Protocol (BGP-4) FSM Session Attribute Sub-Registries</name>
 
-        <t>The BGP-4 FSM Session Attribute Sub-Registries will consist of
-           entries with the following fields:</t>
+        <t>The Border Gateway Protocol (BGP-4) FSM Session Attribute Sub-Registries 
+           will consist of entries with the following fields:</t>
 
         <ul spacing="compact">
           <li>Value (a 16-bit unsigned integer)</li>
@@ -167,7 +167,7 @@
         </ul>
 
         <section>
-          <name>BGP-4 FSM Mandatory Session Attributes</name>
+          <name>Border Gateway Protocol (BGP-4) FSM Mandatory Session Attributes</name>
 
           <table align="left">
             <thead>
@@ -235,7 +235,7 @@
         </section>
 
         <section>
-          <name>BGP-4 FSM Optional Session Attributes</name>
+          <name>Border Gateway Protocol (BGP-4) FSM Optional Session Attributes</name>
 
           <table align="left">
             <thead>
@@ -357,10 +357,10 @@
       </section>
 
       <section>
-        <name>BGP-4 FSM Events Sub-Registry</name>
+        <name>Border Gateway Protocol (BGP-4) FSM Events Sub-Registry</name>
 
-        <t>The BGP-4 FSM Events Sub-Registries will consist of entries with the
-           following fields:</t>
+        <t>The Border Gateway Protocol (BGP-4) FSM Events Sub-Registries
+           will consist of entries with the following fields:</t>
 
         <ul spacing="compact">
           <li>Value</li>
@@ -370,7 +370,7 @@
         </ul>
 
         <section>
-          <name>BGP-4 FSM Administrative Events</name>
+          <name>Border Gateway Protocol (BGP-4) FSM Administrative Events</name>
 
           <table align="left">
             <thead>
