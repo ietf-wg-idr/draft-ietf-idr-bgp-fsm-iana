@@ -13,7 +13,7 @@
 <rfc
   xmlns:xi="http://www.w3.org/2001/XInclude"
   category="std"
-  docName="draft-ietf-idr-bgp-fsm-iana-01"
+  docName="draft-ietf-idr-bgp-fsm-iana-02"
   ipr="trust200902"
   obsoletes=""
   updates=""
@@ -24,7 +24,7 @@
   <front>
     <title abbrev="IANA Registry for BGP FSM">IANA Registrations for the BGP Finite State Machine (FSM)</title>
 
-    <seriesInfo name="Internet-Draft" value="draft-ietf-idr-bgp-fsm-iana-01"/>
+    <seriesInfo name="Internet-Draft" value="draft-ietf-idr-bgp-fsm-iana-02"/>
    
     <author fullname="Jeffrey Haas" initials="J." role="editor" surname="Haas">
       <organization>HPE</organization>
@@ -411,28 +411,28 @@
 
               <tr>
                 <td>4</td>
-                <td>ManualStart with PassiveTcpEstablishment</td>
+                <td>ManualStart_with_PassiveTcpEstablishment</td>
                 <td>Administrative</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>5</td>
-                <td>AutomaticStart with PassiveTcpEstablishment</td>
+                <td>AutomaticStart_with_PassiveTcpEstablishment</td>
                 <td>Administrative</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>6</td>
-                <td>AutomaticStart with DampPeerOscillations</td>
+                <td>AutomaticStart_with_DampPeerOscillations</td>
                 <td>Administrative</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>7</td>
-                <td>AutomaticStart with DampPeerOscillations and PassiveTcpEstablishment</td>
+                <td>AutomaticStart_with_DampPeerOscillations_and_PassiveTcpEstablishment</td>
                 <td>Administrative</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
@@ -446,56 +446,56 @@
 
               <tr>
                 <td>9</td>
-                <td>ConnectRetryTimer Expires</td>
+                <td>ConnectRetryTimer_Expires</td>
                 <td>Timer</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>10</td>
-                <td>HoldTimer Expires</td>
+                <td>HoldTimer_Expires</td>
                 <td>Timer</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>11</td>
-                <td>KeepaliveTimer Expires</td>
+                <td>KeepaliveTimer_Expires</td>
                 <td>Timer</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>12</td>
-                <td>DelayOpenTimer Expires</td>
+                <td>DelayOpenTimer_Expires</td>
                 <td>Timer</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>13</td>
-                <td>IdleHoldTimer Expires</td>
+                <td>IdleHoldTimer_Expires</td>
                 <td>Timer</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>14</td>
-                <td>TcpConnection Valid</td>
+                <td>TcpConnection_Valid</td>
                 <td>TCP Connection</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>15</td>
-                <td>Tcp CR Invalid</td>
+                <td>Tcp_CR_Invalid</td>
                 <td>TCP Connection</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
 
               <tr>
                 <td>16</td>
-                <td>Tcp CR Acked</td>
+                <td>Tcp_CR_Acked</td>
                 <td>TCP Connection</td>
                 <td><xref target="RFC4271" section="8"/></td>
               </tr>
