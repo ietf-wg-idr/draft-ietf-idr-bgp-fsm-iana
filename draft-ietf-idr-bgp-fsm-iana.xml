@@ -631,21 +631,21 @@
 
               <tr>
                 <td>33</td>
-                <td>Bfd_Disabled</td>
+                <td>BfdDisabled</td>
                 <td>Configuration</td>
                 <td><xref target="I-D.ietf-idr-bgp-bfd-strict-mode" section="4"/></td>
               </tr>
 
               <tr>
                 <td>34</td>
-                <td>BfdHoldTimer_Expires</td>
+                <td>BfdHoldTimerExpires</td>
                 <td>Timer</td>
                 <td><xref target="I-D.ietf-idr-bgp-bfd-strict-mode" section="4"/></td>
               </tr>
 
               <tr>
                 <td>35</td>
-                <td>BfdStrict_ConfigChanged</td>
+                <td>BfdStrictConfigChanged</td>
                 <td>Configuration</td>
                 <td><xref target="I-D.ietf-idr-bgp-bfd-strict-mode" section="4"/></td>
               </tr>
