@@ -155,6 +155,23 @@
       </section>
 
       <section>
+        <name>Names in the Border Gateway Protocol (BGP-4) FSM Elements Registry</name>
+
+	<t>Elements in this registry may have names that are very long.  As an
+	   example, some <xref target="RFC4271"/> FSM events have compound
+	   names joined with the underscore character. To ease display of those
+	   compound names, this registry replaces the underscore character with
+	   the space character.</t>
+
+	<t>Identifiers, such as those used in YANG (see
+	   <xref target="RFC9907" section="4.3"/>), that represent entries in
+	   this registry MUST provide a reference to the registered Value for a
+	   given entry in the appropriate sub-registry.  It is RECOMMENDED that
+	   the full Name be included in the descriptive text or comments for
+	   such identifiers.</t>
+      </section>
+
+      <section>
         <name>Border Gateway Protocol (BGP-4) FSM Session Attribute Sub-Registries</name>
 
         <t>The Border Gateway Protocol (BGP-4) FSM Session Attribute Sub-Registries 
@@ -370,7 +387,7 @@
         </ul>
 
         <section>
-          <name>Border Gateway Protocol (BGP-4) FSM Administrative Events</name>
+          <name>Border Gateway Protocol (BGP-4) FSM Events</name>
 
           <table align="left">
             <thead>
@@ -666,6 +683,7 @@
         <name>Informative References</name>
 
         <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7950.xml"/>
+        <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.9907.xml"/>
 
       </references>
 
